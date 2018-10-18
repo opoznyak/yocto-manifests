@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Settings -->
+  <default sync-j="10" revision="sumo" />
+
+  <!-- Remotes -->
+  <remote fetch="https://git.yoctoproject.org/git"                name="yocto"/>
+  <remote fetch="https://github.com/"                             name="github"/>
+
+  <!-- Base stuff -->
+  <project remote="yocto"
+           name="poky"
+           path="sources/poky"/>
+
+  <project remote="github"
+           revision="master"
+           name="opoznyak/meta-homebrew"
+           path="sources/meta-homebrew" />
+
+  <project remote="yocto"
+           name="meta-raspberrypi"
+           path="sources/meta-raspberrypi"/>
+</manifest>
